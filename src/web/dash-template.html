@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{cluster} Netdash</title>
+    <meta name="application-name" content="netdata">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="author" content="andy.rendle@thinkbiganalytics.com">
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://cloud.githubusercontent.com/assets/2662304/22945737/e98cd0c6-f2fd-11e6-96f1-5501934b0955.png"/>
+    <meta property="og:url" content="http://my-netdata.io/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="netdata"/>
+    <meta property="og:title" content="netdata - real-time performance monitoring, done right!"/>
+    <meta property="og:description" content="Stunning real-time dashboards, blazingly fast and extremely interactive. Zero configuration, zero dependencies, zero maintenance." />
+
+    <script>
+        // this section has to appear before loading dashboard.js
+        // Select a theme.
+        // uncomment on of the two themes:
+        // var netdataTheme = 'default'; // this is white
+        var netdataTheme = 'slate'; // this is dark
+        // Set the default netdata server.
+        // on charts without a 'data-host', this one will be used.
+        // the default is the server that dashboard.js is downloaded from.
+        // var netdataServer = 'http://my.server:19999/';
+    </script>
+
+    <style>
+        .node-name {{
+            margin-top: 10px;
+            font-size: 18px;
+            color: #e4e3e3;
+            font-weight: 100;
+        }}
+
+        .title {{
+            color: white;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+            font-weight: 200;
+            font-size: 36px;
+            margin-top: 15px;
+        }}
+    </style>
+</head>
+<!-- ?v20170815-14-->
+<script type="text/javascript" src="http://{FirstHost}:19999/dashboard.js"></script>
+<!--<script>
+        NETDATA.options.current.stop_updates_when_focus_is_lost = false;
+</script>-->
+
+<body>
+<div>
+    <h2 class="title">{cluster} Cluster</h2>
+</div>
+
+<!-- LEFT COLUMN ////////////////////// -->
+<div style="width: {cellwidth}%; text-align: center; float: left; overflow:hidden;">
+    {zero}
+</div>
+
+<!-- Middle COLUMN ////////////////////// -->
+<div style="width: {cellwidth}%; text-align: center; float: left;">
+    {one}
+</div>
+
+<!-- RIGHT COLUMN ////////////////////// -->
+<div style="width: {cellwidth}%; text-align: center; float: left;">
+    {two}
+</div>
+
+<div style="width: {cellwidth}%; text-align: center; float: left;">
+    {three}
+</div>
+
+<div style="width: {cellwidth}%; text-align: center; float: left;">
+    {four}
+</div>
+
+
+</body>
+</html>

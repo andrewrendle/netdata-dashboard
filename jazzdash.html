@@ -1,0 +1,2390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jazz Netdash</title>
+    <meta name="application-name" content="netdata">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="author" content="andy.rendle@thinkbiganalytics.com">
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://cloud.githubusercontent.com/assets/2662304/22945737/e98cd0c6-f2fd-11e6-96f1-5501934b0955.png"/>
+    <meta property="og:url" content="http://my-netdata.io/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="netdata"/>
+    <meta property="og:title" content="netdata - real-time performance monitoring, done right!"/>
+    <meta property="og:description" content="Stunning real-time dashboards, blazingly fast and extremely interactive. Zero configuration, zero dependencies, zero maintenance." />
+
+    <script>
+        // this section has to appear before loading dashboard.js
+        // Select a theme.
+        // uncomment on of the two themes:
+        // var netdataTheme = 'default'; // this is white
+        var netdataTheme = 'slate'; // this is dark
+        // Set the default netdata server.
+        // on charts without a 'data-host', this one will be used.
+        // the default is the server that dashboard.js is downloaded from.
+        // var netdataServer = 'http://my.server:19999/';
+    </script>
+
+    <style>
+        .node-name {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #e4e3e3;
+            font-weight: 100;
+        }
+
+        .title {
+            color: white;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+            font-weight: 200;
+            font-size: 36px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<!-- ?v20170815-14-->
+<script type="text/javascript" src="http://ml-hdpd1.mobilink.osa:19999/dashboard.js"></script>
+<!--<script>
+        NETDATA.options.current.stop_updates_when_focus_is_lost = false;
+</script>-->
+
+<body>
+<div>
+    <h2 class="title">Jazz Cluster</h2>
+</div>
+
+<!-- LEFT COLUMN ////////////////////// -->
+<div style="width: 20%; text-align: center; float: left; overflow:hidden;">
+    
+<!-- START: node 10.145.1.16 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.16:19999">master1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.16:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.16:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.16:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.16 -->
+
+<!-- START: node 10.145.1.12 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.12:19999">hdf2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.12:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.12:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.12:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.12 -->
+
+<!-- START: node 10.145.1.60 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.60:19999">hdf8</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.60:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.60:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.60:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.60 -->
+
+<!-- START: node 10.145.1.89 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.89:19999">kafka03</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.89:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.89:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.89:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.89 -->
+
+<!-- START: node 10.145.1.29 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.29:19999">ignite3</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.29:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.29:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.29:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.29 -->
+
+<!-- START: node 10.145.1.66 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.66:19999">ignite8</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.66:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.66:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.66:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.66 -->
+
+<!-- START: node 10.145.1.97 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.97:19999">ignite13</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.97:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.97:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.97:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.97 -->
+
+<!-- START: node 10.145.1.28 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.28:19999">cassandra2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.28:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.28:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.28:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.28 -->
+
+<!-- START: node 10.145.1.62 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.62:19999">api2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.62:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.62:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.62:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.62 -->
+
+<!-- START: node 10.145.1.2 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.2:19999">hdpd1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.2:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.2:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.2:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.2 -->
+
+<!-- START: node 10.145.1.9 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.9:19999">hdpd6</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.9:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.9:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.9:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.9 -->
+
+<!-- START: node 10.145.1.21 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.21:19999">hdpd10</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.21:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.21:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.21:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.21 -->
+
+<!-- START: node 10.145.1.32 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.32:19999">hdpd15</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.32:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.32:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.32:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.32 -->
+
+<!-- START: node 10.145.1.39 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.39:19999">hdpd20</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.39:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.39:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.39:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.39 -->
+
+<!-- START: node 10.145.1.54 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.54:19999">hdpd25</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.54:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.54:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.54:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.54 -->
+
+<!-- START: node 10.145.1.68 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.68:19999">hdpd30</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.68:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.68:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.68:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.68 -->
+
+<!-- START: node 10.145.1.75 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.75:19999">hdpd35</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.75:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.75:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.75:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.75 -->
+
+<!-- START: node 10.145.1.90 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.90:19999">hdpd40</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.90:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.90:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.90:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.90 -->
+
+<!-- START: node 10.145.1.95 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.95:19999">hdpd45</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.95:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.95:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.95:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.95 -->
+
+<!-- START: node 10.145.1.51 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.51:19999">hdpd52</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.51:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.51:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.51:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.51 -->
+
+</div>
+
+<!-- Middle COLUMN ////////////////////// -->
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 10.145.1.31 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.31:19999">master2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.31:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.31:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.31:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.31 -->
+
+<!-- START: node 10.145.1.26 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.26:19999">hdf3</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.26:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.26:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.26:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.26 -->
+
+<!-- START: node 10.145.1.78 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.78:19999">hdf9</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.78:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.78:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.78:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.78 -->
+
+<!-- START: node 10.145.1.80 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.80:19999">landing1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.80:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.80:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.80:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.80 -->
+
+<!-- START: node 10.145.1.30 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.30:19999">ignite4</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.30:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.30:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.30:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.30 -->
+
+<!-- START: node 10.145.1.63 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.63:19999">ignite9</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.63:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.63:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.63:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.63 -->
+
+<!-- START: node 10.145.1.99 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.99:19999">ignite14</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.99:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.99:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.99:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.99 -->
+
+<!-- START: node 10.145.1.43 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.43:19999">cassandra3</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.43:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.43:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.43:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.43 -->
+
+<!-- START: node 10.145.1.81 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.81:19999">api3</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.81:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.81:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.81:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.81 -->
+
+<!-- START: node 10.145.1.3 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.3:19999">hdpd2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.3:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.3:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.3:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.3 -->
+
+<!-- START: node 10.145.1.42 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.42:19999">hdpd6</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.42:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.42:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.42:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.42 -->
+
+<!-- START: node 10.145.1.22 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.22:19999">hdpd11</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.22:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.22:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.22:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.22 -->
+
+<!-- START: node 10.145.1.33 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.33:19999">hdpd16</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.33:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.33:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.33:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.33 -->
+
+<!-- START: node 10.145.1.40 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.40:19999">hdpd21</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.40:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.40:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.40:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.40 -->
+
+<!-- START: node 10.145.1.55 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.55:19999">hdpd26</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.55:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.55:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.55:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.55 -->
+
+<!-- START: node 10.145.1.69 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.69:19999">hdpd31</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.69:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.69:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.69:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.69 -->
+
+<!-- START: node 10.145.1.76 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.76:19999">hdpd36</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.76:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.76:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.76:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.76 -->
+
+<!-- START: node 10.145.1.91 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.91:19999">hdpd41</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.91:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.91:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.91:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.91 -->
+
+<!-- START: node 10.145.1.4 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.4:19999">hdpd46</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.4:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.4:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.4:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.4 -->
+
+<!-- START: node 10.145.1.52 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.52:19999">hdpd53</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.52:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.52:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.52:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.52 -->
+
+</div>
+
+<!-- RIGHT COLUMN ////////////////////// -->
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 10.145.1.48 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.48:19999">master3</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.48:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.48:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.48:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.48 -->
+
+<!-- START: node 10.145.1.27 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.27:19999">hdf4</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.27:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.27:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.27:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.27 -->
+
+<!-- START: node 10.145.1.79 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.79:19999">hdf10</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.79:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.79:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.79:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.79 -->
+
+<!-- START: node 10.145.1.96 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.96:19999">landing2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.96:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.96:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.96:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.96 -->
+
+<!-- START: node 10.145.1.44 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.44:19999">ignite5</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.44:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.44:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.44:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.44 -->
+
+<!-- START: node 10.145.1.65 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.65:19999">ignite10</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.65:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.65:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.65:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.65 -->
+
+<!-- START: node 10.145.1.84 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.84:19999">security1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.84:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.84:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.84:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.84 -->
+
+<!-- START: node 10.145.1.61 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.61:19999">cassandra4</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.61:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.61:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.61:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.61 -->
+
+<!-- START: node 10.145.1.100 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.100:19999">api4</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.100:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.100:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.100:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.100 -->
+
+<!-- START: node 10.145.1.6 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.6:19999">hdpd3</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.6:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.6:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.6:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.6 -->
+
+<!-- START: node 10.145.1.10 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.10:19999">hdpd7</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.10:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.10:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.10:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.10 -->
+
+<!-- START: node 10.145.1.23 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.23:19999">hdpd12</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.23:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.23:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.23:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.23 -->
+
+<!-- START: node 10.145.1.36 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.36:19999">hdpd17</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.36:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.36:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.36:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.36 -->
+
+<!-- START: node 10.145.1.49 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.49:19999">hdpd22</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.49:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.49:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.49:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.49 -->
+
+<!-- START: node 10.145.1.56 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.56:19999">hdpd27</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.56:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.56:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.56:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.56 -->
+
+<!-- START: node 10.145.1.72 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.72:19999">hdpd32</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.72:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.72:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.72:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.72 -->
+
+<!-- START: node 10.145.1.77 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.77:19999">hdpd37</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.77:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.77:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.77:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.77 -->
+
+<!-- START: node 10.145.1.92 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.92:19999">hdpd42</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.92:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.92:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.92:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.92 -->
+
+<!-- START: node 10.145.1.19 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.19:19999">hdpd48</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.19:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.19:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.19:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.19 -->
+
+<!-- START: node 10.145.1.70 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.70:19999">hdpd54</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.70:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.70:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.70:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.70 -->
+
+</div>
+
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 10.145.1.67 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.67:19999">edge1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.67:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.67:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.67:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.67 -->
+
+<!-- START: node 10.145.1.41 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.41:19999">hdf5</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.41:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.41:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.41:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.41 -->
+
+<!-- START: node 10.145.1.20 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.20:19999">kafka01</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.20:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.20:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.20:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.20 -->
+
+<!-- START: node 10.145.1.15 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.15:19999">ignite1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.15:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.15:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.15:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.15 -->
+
+<!-- START: node 10.145.1.45 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.45:19999">ignite6</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.45:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.45:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.45:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.45 -->
+
+<!-- START: node 10.145.1.82 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.82:19999">ignite11</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.82:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.82:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.82:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.82 -->
+
+<!-- START: node 10.145.1.98 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.98:19999">security2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.98:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.98:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.98:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.98 -->
+
+<!-- START: node 10.145.1.85 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.85:19999">cassandra5</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.85:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.85:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.85:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.85 -->
+
+<!-- START: node 10.145.1.101 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.101:19999">mysqlmd1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.101:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.101:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.101:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.101 -->
+
+<!-- START: node 10.145.1.7 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.7:19999">hdpd4</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.7:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.7:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.7:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.7 -->
+
+<!-- START: node 10.145.1.17 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.17:19999">hdpd8</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.17:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.17:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.17:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.17 -->
+
+<!-- START: node 10.145.1.24 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.24:19999">hdpd13</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.24:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.24:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.24:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.24 -->
+
+<!-- START: node 10.145.1.37 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.37:19999">hdpd18</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.37:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.37:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.37:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.37 -->
+
+<!-- START: node 10.145.1.50 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.50:19999">hdpd23</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.50:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.50:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.50:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.50 -->
+
+<!-- START: node 10.145.1.57 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.57:19999">hdpd28</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.57:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.57:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.57:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.57 -->
+
+<!-- START: node 10.145.1.73 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.73:19999">hdpd33</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.73:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.73:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.73:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.73 -->
+
+<!-- START: node 10.145.1.86 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.86:19999">hdpd38</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.86:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.86:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.86:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.86 -->
+
+<!-- START: node 10.145.1.93 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.93:19999">hdpd43</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.93:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.93:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.93:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.93 -->
+
+<!-- START: node 10.145.1.34 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.34:19999">hdpd50</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.34:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.34:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.34:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.34 -->
+
+<!-- START: node 10.145.1.88 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.88:19999">hdpd56</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.88:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.88:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.88:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.88 -->
+
+</div>
+
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 10.145.1.11 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.11:19999">hdf1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.11:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.11:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.11:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.11 -->
+
+<!-- START: node 10.145.1.59 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.59:19999">hdf7</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.59:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.59:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.59:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.59 -->
+
+<!-- START: node 10.145.1.71 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.71:19999">kafka02</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.71:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.71:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.71:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.71 -->
+
+<!-- START: node 10.145.1.14 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.14:19999">ignite2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.14:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.14:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.14:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.14 -->
+
+<!-- START: node 10.145.1.47 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.47:19999">ignite7</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.47:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.47:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.47:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.47 -->
+
+<!-- START: node 10.145.1.83 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.83:19999">ignite12</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.83:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.83:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.83:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.83 -->
+
+<!-- START: node 10.145.1.13 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.13:19999">cassandra1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.13:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.13:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.13:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.13 -->
+
+<!-- START: node 10.145.1.46 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.46:19999">api1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.46:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.46:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.46:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.46 -->
+
+<!-- START: node 10.145.1.102 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.102:19999">mysqlmd2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.102:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.102:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.102:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.102 -->
+
+<!-- START: node 10.145.1.8 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.8:19999">hdpd5</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.8:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.8:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.8:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.8 -->
+
+<!-- START: node 10.145.1.18 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.18:19999">hdpd9</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.18:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.18:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.18:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.18 -->
+
+<!-- START: node 10.145.1.25 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.25:19999">hdpd14</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.25:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.25:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.25:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.25 -->
+
+<!-- START: node 10.145.1.38 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.38:19999">hdpd19</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.38:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.38:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.38:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.38 -->
+
+<!-- START: node 10.145.1.53 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.53:19999">hdpd24</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.53:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.53:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.53:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.53 -->
+
+<!-- START: node 10.145.1.58 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.58:19999">hdpd29</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.58:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.58:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.58:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.58 -->
+
+<!-- START: node 10.145.1.74 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.74:19999">hdpd34</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.74:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.74:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.74:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.74 -->
+
+<!-- START: node 10.145.1.87 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.87:19999">hdpd39</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.87:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.87:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.87:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.87 -->
+
+<!-- START: node 10.145.1.94 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.94:19999">hdpd44</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.94:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.94:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.94:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.94 -->
+
+<!-- START: node 10.145.1.35 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.35:19999">hdpd51</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.35:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.35:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.35:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.35 -->
+
+<!-- START: node 10.145.1.64 -->
+<div>
+    <div class="node-name">
+    	<a href="http://10.145.1.64:19999">rsrv</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://10.145.1.64:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://10.145.1.64:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://10.145.1.64:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 10.145.1.64 -->
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+<!-- START: node {hostname} -->
+<div>
+    <div class="node-name">
+    	<a href="http://{hostname}:19999">{nodename}</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://{hostname}:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://{hostname}:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://{hostname}:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node {hostname} -->
