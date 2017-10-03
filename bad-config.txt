@@ -1,0 +1,74 @@
+ml-hdpd1.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdpd2.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdpd3.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdpd4.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdpd7.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdf1.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdf2.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-cassandra1.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdpd11.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdf3.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdf4.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-cassandra2.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdf5.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdpd6.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-cassandra3.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-api1.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdpd23.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdpd52.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdpd53.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdf7.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdf8.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-cassandra4.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-api2.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-ignite9.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-ignite10.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-ignite8.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdpd30.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdpd54.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+mlml-hdf9.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-hdf10.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-landing1.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-api3.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-cassandra5.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-landing2.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+mlml-api4.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-mysqlmd1.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory
+ml-mysqlmd2.mobilink.osa
+ls: cannot access /etc/hadoop/conf/topology_script.py: No such file or directory

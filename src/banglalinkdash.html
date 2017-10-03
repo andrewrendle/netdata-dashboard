@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Banglalink Netdash</title>
+    <meta name="application-name" content="netdata">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="author" content="andy.rendle@thinkbiganalytics.com">
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://cloud.githubusercontent.com/assets/2662304/22945737/e98cd0c6-f2fd-11e6-96f1-5501934b0955.png"/>
+    <meta property="og:url" content="http://my-netdata.io/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="netdata"/>
+    <meta property="og:title" content="netdata - real-time performance monitoring, done right!"/>
+    <meta property="og:description" content="Stunning real-time dashboards, blazingly fast and extremely interactive. Zero configuration, zero dependencies, zero maintenance." />
+
+    <script>
+        // this section has to appear before loading dashboard.js
+        // Select a theme.
+        // uncomment on of the two themes:
+        // var netdataTheme = 'default'; // this is white
+        var netdataTheme = 'slate'; // this is dark
+        // Set the default netdata server.
+        // on charts without a 'data-host', this one will be used.
+        // the default is the server that dashboard.js is downloaded from.
+        // var netdataServer = 'http://my.server:19999/';
+    </script>
+
+    <style>
+        .node-name {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #e4e3e3;
+            font-weight: 100;
+        }
+
+        .title {
+            color: white;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+            font-weight: 200;
+            font-size: 36px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<!-- ?v20170815-14-->
+<script type="text/javascript" src="http://bldmpmas01.banglalink.net:19999/dashboard.js"></script>
+<!--<script>
+        NETDATA.options.current.stop_updates_when_focus_is_lost = false;
+</script>-->
+
+<body>
+<div>
+    <h2 class="title">Banglalink Cluster</h2>
+</div>
+
+<!-- LEFT COLUMN ////////////////////// -->
+<div style="width: 20%; text-align: center; float: left; overflow:hidden;">
+    
+<!-- START: node 172.16.5.11 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.11:19999">bldmpmas01</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.11:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.11:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.11:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.11 -->
+
+<!-- START: node 172.16.5.17 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.17:19999">bldmphdf02</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.17:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.17:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.17:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.17 -->
+
+<!-- START: node 172.16.5.36 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.36:19999">bldmpign04</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.36:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.36:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.36:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.36 -->
+
+<!-- START: node 172.16.5.31 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.31:19999">bldmpsec01</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.31:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.31:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.31:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.31 -->
+
+<!-- START: node 172.16.5.51 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.51:19999">bldmpapi01</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.51:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.51:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.51:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.51 -->
+
+<!-- START: node 172.16.5.61 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.61:19999">bldmpdat02</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.61:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.61:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.61:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.61 -->
+
+<!-- START: node 172.16.5.67 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.67:19999">bldmpdat08</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.67:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.67:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.67:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.67 -->
+
+<!-- START: node 172.16.5.72 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.72:19999">bldmpdat13</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.72:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.72:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.72:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.72 -->
+
+<!-- START: node 172.16.5.77 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.77:19999">bldmpdat18</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.77:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.77:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.77:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.77 -->
+
+<!-- START: node 172.16.5.82 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.82:19999">bldmpdat23</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.82:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.82:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.82:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.82 -->
+
+<!-- START: node 172.16.5.87 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.87:19999">bldmpdat28</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.87:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.87:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.87:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.87 -->
+
+</div>
+
+<!-- Middle COLUMN ////////////////////// -->
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 172.16.5.12 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.12:19999">bldmpmas02</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.12:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.12:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.12:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.12 -->
+
+<!-- START: node 172.16.5.18 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.18:19999">bldmphdf03</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.18:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.18:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.18:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.18 -->
+
+<!-- START: node 172.16.5.37 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.37:19999">bldmpign05</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.37:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.37:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.37:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.37 -->
+
+<!-- START: node 172.16.5.32 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.32:19999">bldmpsec02</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.32:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.32:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.32:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.32 -->
+
+<!-- START: node 172.16.5.52 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.52:19999">bldmpapi02</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.52:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.52:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.52:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.52 -->
+
+<!-- START: node 172.16.5.63 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.63:19999">bldmpdat04</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.63:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.63:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.63:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.63 -->
+
+<!-- START: node 172.16.5.68 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.68:19999">bldmpdat09</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.68:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.68:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.68:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.68 -->
+
+<!-- START: node 172.16.5.73 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.73:19999">bldmpdat14</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.73:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.73:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.73:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.73 -->
+
+<!-- START: node 172.16.5.78 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.78:19999">bldmpdat19</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.78:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.78:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.78:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.78 -->
+
+<!-- START: node 172.16.5.83 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.83:19999">bldmpdat24</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.83:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.83:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.83:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.83 -->
+
+<!-- START: node 172.16.5.88 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.88:19999">bldmpdat29</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.88:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.88:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.88:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.88 -->
+
+</div>
+
+<!-- RIGHT COLUMN ////////////////////// -->
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 172.16.5.13 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.13:19999">bldmpmas03</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.13:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.13:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.13:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.13 -->
+
+<!-- START: node 172.16.5.33 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.33:19999">bldmpign01</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.33:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.33:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.33:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.33 -->
+
+<!-- START: node 172.16.5.38 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.38:19999">bldmpign06</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.38:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.38:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.38:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.38 -->
+
+<!-- START: node 172.16.5.26 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.26:19999">bldmpcas01</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.26:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.26:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.26:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.26 -->
+
+<!-- START: node 172.16.5.53 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.53:19999">bldmpapi03</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.53:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.53:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.53:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.53 -->
+
+<!-- START: node 172.16.5.64 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.64:19999">bldmpdat05</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.64:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.64:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.64:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.64 -->
+
+<!-- START: node 172.16.5.69 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.69:19999">bldmpdat10</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.69:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.69:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.69:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.69 -->
+
+<!-- START: node 172.16.5.74 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.74:19999">bldmpdat15</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.74:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.74:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.74:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.74 -->
+
+<!-- START: node 172.16.5.79 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.79:19999">bldmpdat20</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.79:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.79:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.79:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.79 -->
+
+<!-- START: node 172.16.5.84 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.84:19999">bldmpdat25</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.84:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.84:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.84:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.84 -->
+
+<!-- START: node 172.16.5.89 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.89:19999">bldmpdat30</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.89:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.89:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.89:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.89 -->
+
+</div>
+
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 172.16.5.14 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.14:19999">bldmpedg01</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.14:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.14:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.14:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.14 -->
+
+<!-- START: node 172.16.5.34 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.34:19999">bldmpign02</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.34:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.34:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.34:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.34 -->
+
+<!-- START: node 172.16.5.39 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.39:19999">bldmpign07</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.39:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.39:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.39:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.39 -->
+
+<!-- START: node 172.16.5.27 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.27:19999">bldmpcas02</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.27:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.27:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.27:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.27 -->
+
+<!-- START: node 172.16.5.54 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.54:19999">bldmpapi04</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.54:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.54:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.54:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.54 -->
+
+<!-- START: node 172.16.5.65 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.65:19999">bldmpdat06</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.65:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.65:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.65:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.65 -->
+
+<!-- START: node 172.16.5.70 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.70:19999">bldmpdat11</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.70:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.70:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.70:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.70 -->
+
+<!-- START: node 172.16.5.75 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.75:19999">bldmpdat16</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.75:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.75:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.75:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.75 -->
+
+<!-- START: node 172.16.5.80 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.80:19999">bldmpdat21</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.80:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.80:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.80:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.80 -->
+
+<!-- START: node 172.16.5.85 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.85:19999">bldmpdat26</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.85:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.85:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.85:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.85 -->
+
+<!-- START: node 172.16.5.58 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.58:19999">bldmpr01</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.58:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.58:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.58:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.58 -->
+
+</div>
+
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 172.16.5.16 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.16:19999">bldmphdf01</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.16:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.16:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.16:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.16 -->
+
+<!-- START: node 172.16.5.35 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.35:19999">bldmpign03</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.35:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.35:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.35:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.35 -->
+
+<!-- START: node 172.16.5.40 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.40:19999">bldmpign08</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.40:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.40:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.40:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.40 -->
+
+<!-- START: node 172.16.5.28 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.28:19999">bldmpcas03</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.28:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.28:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.28:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.28 -->
+
+<!-- START: node 172.16.5.60 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.60:19999">bldmpdat01</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.60:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.60:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.60:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.60 -->
+
+<!-- START: node 172.16.5.66 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.66:19999">bldmpdat07</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.66:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.66:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.66:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.66 -->
+
+<!-- START: node 172.16.5.71 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.71:19999">bldmpdat12</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.71:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.71:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.71:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.71 -->
+
+<!-- START: node 172.16.5.76 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.76:19999">bldmpdat17</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.76:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.76:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.76:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.76 -->
+
+<!-- START: node 172.16.5.81 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.81:19999">bldmpdat22</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.81:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.81:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.81:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.81 -->
+
+<!-- START: node 172.16.5.86 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.5.86:19999">bldmpdat27</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.5.86:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.5.86:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="ipv4.tcperrors" data-host="http://172.16.5.86:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.5.86 -->
+
+</div>
+
+
+</body>
+</html>

@@ -27,12 +27,14 @@ from operator import itemgetter, attrgetter, methodcaller
 # display usage text
 #
 def usage():
-    print "generate_prd_dashboard.py -c <cluster e.g cisdp> <-h show this>";
+    print "generate_prd_dashboard.py -c <cluster e.g cisdp> -f <hostsfile somefile.txt> <-h show this>";
 
 
 def process(clustername, hostlist):
+    
+    recom = re.compile(r'(^ml-|^bldmp)([a-z]*)([0-9]*)?$')
         
-    group = {'security': 7,
+    jazzmap = {'security': 7,
              'mysqlmd': 10,
              'master': 1,
              'landing': 5,
@@ -45,6 +47,22 @@ def process(clustername, hostlist):
              'hdf': 3,
              'rsrv': 12} 
     
+    banmap = {'sec': 7,
+             'sql': 10,
+             'mas': 1,
+             'lan': 5,
+             'edg': 2,
+             'kaf': 4,
+             'ign': 6,
+             'dat': 11,
+             'api' : 9,
+             'cas': 8,
+             'hdf': 3,
+             'r': 12} 
+    
+    hostmap = { 'ml-' : jazzmap,
+               'bldmp' : banmap}
+    
     nodes = []
     
     # extract our hosts
@@ -53,12 +71,22 @@ def process(clustername, hostlist):
         host = entry[1] 
         
         parts = host.split('.')
-        name = parts[0].split('-')[1]        
-        htype = re.search(r'(^[a-zA-Z]*)([0-9]*)$', name).group(1) 
-        num = '000' + re.search(r'(^[a-zA-Z]*)([0-9]*)$', name).group(2)
+        # bldmpdat05.banglalink.net
+        # ml-hdpd1.mobilink.osa                
+        result = recom.match(parts[0])  
+                        
+        prefix = result.group(1)
+        hostkey = hostmap.get(prefix)
+        htype = result.group(2)
+        num = result.group(3) 
         
-        nodes.append([group.get(htype), htype, num[-4:], name, host, ip]) 
+        print prefix + " " + htype + " " + str(num)
+    
+        if (num == ""):
+          num = "1"
 
+        nodes.append([hostkey.get(htype), htype, ('000' + num)[-4:], parts[0], host, ip]) 
+        
     sortednodes = sorted(nodes, key=itemgetter(0, 2))
     
     print sortednodes    
@@ -93,33 +121,39 @@ def process(clustername, hostlist):
             dashFile.write(dash)
 
 
-def main(cluster):
+def main(cluster, hostsfile):
                 
     nodes = []
-    with open('../data/dashboard-prd-hosts.txt') as f:
-        content = f.readlines()        
+    with open(hostsfile) as f:
+        content = f.readlines()  
+              
     content = [x.strip() for x in content] 
     
     for node in content:
         nodes.append(node.split())
-
+        
     process(cluster, nodes);
     
 if __name__ == "__main__":
 
     try:    
-        opts, args = getopt.getopt(sys.argv[1:], ':c:h', ['cluster='])
+        opts, args = getopt.getopt(sys.argv[1:], ':c:f:h', ['cluster=','hostsfile='])
 
         # print sys.argv[0]+' :', opts;
 
         for opt, arg in opts:
             if opt in ('-c', '--cluster'):
                 cluster = arg.strip();
+            elif opt in ('-f', '--hostsfile'):
+                hostsfile = arg.strip();
+            elif opt in ('-h', '--help'):
+                usage();
+                sys.exit(1);
             else:
                 usage();
                 sys.exit(1);
                 
-        main(cluster)
+        main(cluster, hostsfile)
     
     except getopt.GetoptError:
         usage();
