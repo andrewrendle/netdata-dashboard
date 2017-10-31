@@ -32,7 +32,7 @@ def usage():
 
 def process(clustername, hostlist):
     
-    recom = re.compile(r'(^ml-|^bldmp)([a-z]*)([0-9]*)?$')
+    recom = re.compile(r'(^ml-|^bldmp|^djezzy-)([a-z]*)([0-9]*)?$')
         
     jazzmap = {'security': 7,
              'mysqlmd': 10,
@@ -60,8 +60,22 @@ def process(clustername, hostlist):
              'hdf': 3,
              'r': 12} 
     
+    djmap = {'kdc': 7,
+             'sql': 10,
+             'hdpm': 1,
+             'landing': 5,
+             'edge': 2,
+             'kafka': 4,
+             'ignite': 6,
+             'hdpd': 11,
+             'api' : 9,
+             'cassandra': 8,
+             'hdf': 3,
+             'rserver': 12} 
+    
     hostmap = { 'ml-' : jazzmap,
-               'bldmp' : banmap}
+               'bldmp' : banmap,
+               'djezzy-' : djmap}
     
     nodes = []
     
@@ -70,9 +84,7 @@ def process(clustername, hostlist):
         ip = entry[0]
         host = entry[1] 
         
-        parts = host.split('.')
-        # bldmpdat05.banglalink.net
-        # ml-hdpd1.mobilink.osa                
+        parts = host.split('.')             
         result = recom.match(parts[0])  
                         
         prefix = result.group(1)
@@ -130,7 +142,8 @@ def main(cluster, hostsfile):
     content = [x.strip() for x in content] 
     
     for node in content:
-        nodes.append(node.split())
+        if not node.startswith("#"):
+            nodes.append(node.split())
         
     process(cluster, nodes);
     

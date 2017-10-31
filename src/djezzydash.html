@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Djezzy Netdash</title>
+    <meta name="application-name" content="netdata">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="author" content="andy.rendle@thinkbiganalytics.com">
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://cloud.githubusercontent.com/assets/2662304/22945737/e98cd0c6-f2fd-11e6-96f1-5501934b0955.png"/>
+    <meta property="og:url" content="http://my-netdata.io/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="netdata"/>
+    <meta property="og:title" content="netdata - real-time performance monitoring, done right!"/>
+    <meta property="og:description" content="Stunning real-time dashboards, blazingly fast and extremely interactive. Zero configuration, zero dependencies, zero maintenance." />
+
+    <script>
+        // this section has to appear before loading dashboard.js
+        // Select a theme.
+        // uncomment on of the two themes:
+        // var netdataTheme = 'default'; // this is white
+        var netdataTheme = 'slate'; // this is dark
+        // Set the default netdata server.
+        // on charts without a 'data-host', this one will be used.
+        // the default is the server that dashboard.js is downloaded from.
+        // var netdataServer = 'http://my.server:19999/';
+    </script>
+
+    <style>
+        .node-name {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #e4e3e3;
+            font-weight: 100;
+        }
+
+        .title {
+            color: white;
+            text-align: center;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+            font-weight: 200;
+            font-size: 36px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<!-- ?v20170815-14-->
+<script type="text/javascript" src="http://djezzy-ignite1.otalgerie.com:19999/dashboard.js"></script>
+<!--<script>
+        NETDATA.options.current.stop_updates_when_focus_is_lost = false;
+</script>-->
+
+<body>
+<div>
+    <h2 class="title">Djezzy Cluster</h2>
+</div>
+
+<!-- LEFT COLUMN ////////////////////// -->
+<div style="width: 20%; text-align: center; float: left; overflow:hidden;">
+    
+<!-- START: node 172.16.60.72 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.72:19999">djezzy-hdpm1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.72:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.72:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.72:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.72 -->
+
+<!-- START: node 172.16.60.98 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.98:19999">djezzy-hdf2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.98:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.98:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.98:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.98 -->
+
+<!-- START: node 172.16.60.66 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.66:19999">djezzy-ignite1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.66:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.66:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.66:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.66 -->
+
+<!-- START: node 172.16.60.71 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.71:19999">djezzy-ignite6</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.71:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.71:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.71:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.71 -->
+
+<!-- START: node 172.16.60.96 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.96:19999">djezzy-cassandra3</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.96:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.96:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.96:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.96 -->
+
+<!-- START: node 172.16.60.81 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.81:19999">djezzy-hdpd5</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.81:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.81:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.81:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.81 -->
+
+<!-- START: node 172.16.60.86 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.86:19999">djezzy-hdpd10</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.86:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.86:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.86:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.86 -->
+
+<!-- START: node 172.16.60.75 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.75:19999">djezzy-rserver1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.75:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.75:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.75:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.75 -->
+
+</div>
+
+<!-- Middle COLUMN ////////////////////// -->
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 172.16.60.73 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.73:19999">djezzy-hdpm2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.73:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.73:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.73:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.73 -->
+
+<!-- START: node 172.16.60.99 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.99:19999">djezzy-hdf3</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.99:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.99:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.99:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.99 -->
+
+<!-- START: node 172.16.60.67 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.67:19999">djezzy-ignite2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.67:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.67:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.67:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.67 -->
+
+<!-- START: node 172.16.60.100 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.100:19999">djezzy-kdc1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.100:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.100:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.100:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.100 -->
+
+<!-- START: node 172.16.60.77 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.77:19999">djezzy-hdpd1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.77:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.77:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.77:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.77 -->
+
+<!-- START: node 172.16.60.82 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.82:19999">djezzy-hdpd6</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.82:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.82:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.82:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.82 -->
+
+<!-- START: node 172.16.60.87 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.87:19999">djezzy-hdpd11</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.87:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.87:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.87:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.87 -->
+
+</div>
+
+<!-- RIGHT COLUMN ////////////////////// -->
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 172.16.60.74 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.74:19999">djezzy-hdpm3</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.74:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.74:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.74:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.74 -->
+
+<!-- START: node 172.16.60.92 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.92:19999">djezzy-kafka1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.92:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.92:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.92:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.92 -->
+
+<!-- START: node 172.16.60.68 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.68:19999">djezzy-ignite3</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.68:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.68:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.68:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.68 -->
+
+<!-- START: node 172.16.60.101 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.101:19999">djezzy-kdc2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.101:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.101:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.101:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.101 -->
+
+<!-- START: node 172.16.60.78 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.78:19999">djezzy-hdpd2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.78:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.78:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.78:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.78 -->
+
+<!-- START: node 172.16.60.83 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.83:19999">djezzy-hdpd7</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.83:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.83:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.83:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.83 -->
+
+<!-- START: node 172.16.60.88 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.88:19999">djezzy-hdpd12</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.88:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.88:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.88:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.88 -->
+
+</div>
+
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 172.16.60.76 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.76:19999">djezzy-edge1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.76:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.76:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.76:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.76 -->
+
+<!-- START: node 172.16.60.93 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.93:19999">djezzy-kafka2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.93:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.93:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.93:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.93 -->
+
+<!-- START: node 172.16.60.69 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.69:19999">djezzy-ignite4</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.69:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.69:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.69:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.69 -->
+
+<!-- START: node 172.16.60.94 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.94:19999">djezzy-cassandra1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.94:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.94:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.94:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.94 -->
+
+<!-- START: node 172.16.60.79 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.79:19999">djezzy-hdpd3</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.79:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.79:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.79:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.79 -->
+
+<!-- START: node 172.16.60.84 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.84:19999">djezzy-hdpd8</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.84:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.84:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.84:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.84 -->
+
+<!-- START: node 172.16.60.89 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.89:19999">djezzy-hdpd13</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.89:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.89:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.89:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.89 -->
+
+</div>
+
+<div style="width: 20%; text-align: center; float: left;">
+    
+<!-- START: node 172.16.60.97 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.97:19999">djezzy-hdf1</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.97:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.97:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.97:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.97 -->
+
+<!-- START: node 172.16.60.91 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.91:19999">djezzy-landing</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.91:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.91:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.91:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.91 -->
+
+<!-- START: node 172.16.60.70 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.70:19999">djezzy-ignite5</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.70:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.70:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.70:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.70 -->
+
+<!-- START: node 172.16.60.95 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.95:19999">djezzy-cassandra2</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.95:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.95:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.95:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.95 -->
+
+<!-- START: node 172.16.60.80 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.80:19999">djezzy-hdpd4</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.80:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.80:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.80:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.80 -->
+
+<!-- START: node 172.16.60.85 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.85:19999">djezzy-hdpd9</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.85:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.85:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.85:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.85 -->
+
+<!-- START: node 172.16.60.90 -->
+<div>
+    <div class="node-name">
+    	<a href="http://172.16.60.90:19999">djezzy-hdpd14</a>  
+    </div>
+
+    <div class="netdata-chart-row">
+        <div data-netdata="system.cpu" data-host="http://172.16.60.90:19999" data-decimal-digits="0"
+             data-gauge-max-value="100" data-chart-library="gauge" data-width="22%" data-after="-480"
+             data-points="480" data-title="CPU" data-colors="#22AA99" data-units="%"></div>
+        <br/>
+
+        <div data-netdata="system.ram" data-host="http://172.16.60.90:19999" data-dimensions="used|buffers|active|wired"
+             data-append-options="percentage" data-units="%" data-easypiechart-max-value="100" data-after="-480" data-points="480"
+             data-colors="#EE9911" data-decimal-digits="1" data-title="Used RAM" data-chart-library="easypiechart" data-width="16%"
+             data-height="100%"></div>
+    </div>
+</div>
+<div data-netdata="system.cpu" data-host="http://172.16.60.90:19999"
+     data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="90%" data-height="40px" data-after="-300"
+     data-points="300" data-colors="#FF5555"></div>
+<!-- END: node 172.16.60.90 -->
+
+</div>
+
+
+</body>
+</html>
